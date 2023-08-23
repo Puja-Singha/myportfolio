@@ -22,10 +22,10 @@ export const Projects = () => {
           <div className='md:bg-gradient-to-b md:from-blue-700 md:via-orange-100 md:to-orange-300  bg-white rounded-lg shadow-md p-4 md:flex-1'>
           <h1 className='text-pink-600 text-4xl font-bold mb-4 mt-4 text-center' style={{ textShadow: '0 0 15px lightblue' }}>WikiPro</h1>
             <div className="grid grid-cols-2 gap-2">
-              <img src={Project1} alt='Project 1' className='w-full h-full' />
-              <img src={Project2} alt='Project 2' className='w-full h-full' />
-              <img src={Project3} alt='Project 3' className='w-full h-full' />
-              <img src={Project4} alt='Project 4' className='w-full h-full' />
+              <img src={Project1} alt='Project 1' className='w-full h-full' loading="lazy"/>
+              <img src={Project2} alt='Project 2' className='w-full h-full' loading="lazy"/>
+              <img src={Project3} alt='Project 3' className='w-full h-full' loading="lazy"/>
+              <img src={Project4} alt='Project 4' className='w-full h-full' loading="lazy"/>
             </div>
           </div>
 
@@ -44,9 +44,9 @@ export const Projects = () => {
           <div className='md:bg-gradient-to-b md:from-orange-300 md:to-orange-500 rounded-lg shadow-md p-4 md:flex-1 md:w-1/2 md:h-1/2 bg-white'>
           <h1 className='md:text-white text-4xl font-bold mb-4 mt-4 text-center text-yellow-500' style={{ textShadow: '0 0 15px lightblue' }}>DigitalDiary</h1>
             <div className="grid grid-cols-2 gap-2">
-              <img src={DigitalDiary1} alt='Project 1' className='w-full h-full' />
-              <img src={DigitalDiary2} alt='Project 2' className='w-full h-full' />
-              <img src={DigitalDiary3} alt='Project 3' className='w-full h-full' />
+              <img src={DigitalDiary1} alt='Project 1' className='w-full h-full' loading="lazy"/>
+              <img src={DigitalDiary2} alt='Project 2' className='w-full h-full' loading="lazy"/>
+              <img src={DigitalDiary3} alt='Project 3' className='w-full h-full' loading="lazy"/>
             </div>
           </div>
 

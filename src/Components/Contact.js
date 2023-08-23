@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Navbar } from './Navbar';
 import { ToastContainer, toast } from 'react-toastify';
@@ -6,10 +6,23 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export const Contact = () => {
   const form = useRef();
+  const [formError, setFormError] = useState(null);
  
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const formData = new FormData(form.current);
+    const name = formData.get('user_name');
+    const email = formData.get('user_email');
+    const message = formData.get('message');
+
+    if (!name || !email || !message) {
+      setFormError('Please fill out all fields.');
+      return;
+    }
+
+  
+    setFormError(null);
 
     emailjs
       .sendForm('service_x9dbzvf', 'template_8kyixyn', form.current, 'lGz8VtRZsK6ItmVF2')
@@ -28,7 +41,7 @@ export const Contact = () => {
         (error) => {
           console.log(error.text);
          
-          toast.error('Oops, something went wrong. Please try again later.', {
+          toast.error('Oops, something went wrong. Please try again.', {
             position: toast.POSITION.TOP_CENTER
           });
         }
@@ -57,6 +70,7 @@ export const Contact = () => {
           <label className='text-white block'>Message</label>
           <textarea name='message' className='bg-white text-black rounded-md py-2 px-3 md:w-1/2 w-72 h-32' required />
         </div>
+        {formError && <div className='text-red-500'>{formError}</div>}
         <input type='submit' value='Send' className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg cursor-pointer md:w-1/2 w-72' />
         <ToastContainer />
       </form>

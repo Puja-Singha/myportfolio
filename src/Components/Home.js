@@ -37,7 +37,7 @@ export const Home = (props) => {
            
           </div>
           <div className='md:w-1/2 md:flex md:ml-44 mt-8 mb-10'>
-            <img src={Image1} alt='Image1' className='md:w-96 md:h-96 w-60 h-56 md:rounded-full rounded-full border' style={{boxShadow:'0 0 20px white'}}/>
+            <img src={Image1} alt='Image1' className='md:w-96 md:h-96 w-60 h-56 md:rounded-full rounded-full border' style={{boxShadow:'0 0 20px white'}} loading="lazy"/>
           </div>
           
         </div>
