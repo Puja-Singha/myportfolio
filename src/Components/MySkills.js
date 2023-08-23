@@ -57,7 +57,7 @@ export const MySkills = () => {
      
 
   return (
-    <div className='overflow-hidden min-h-screen bg-gradient-to-b from-black via-purple-950 to-purple-700'>
+    <div className=' min-h-screen bg-gradient-to-b from-black via-purple-950 to-purple-700'>
       <Navbar/>
       <main className='overflow-hidden'>
         <div className='flex flex-col md:flex-row '>

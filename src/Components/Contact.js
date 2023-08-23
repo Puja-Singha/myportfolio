@@ -49,7 +49,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className='overflow-hidden min-h-screen bg-gradient-to-b from-sky-600 via-cyan-400 to-orange-300 ...'>
+    <div className='min-h-screen bg-gradient-to-b from-sky-600 via-cyan-400 to-orange-300 ...'>
       <Navbar />
        <main className='overflow-hidden'>
         <div className='text-center'>

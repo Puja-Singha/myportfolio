@@ -4,7 +4,7 @@ import { Navbar } from './Navbar';
 
 export const About = (props) => {
   return (
-    <div className='overflow-hidden min-h-screen bg-gradient-to-b from-black via-blue-800 to-blue-500'>
+    <div className='min-h-screen bg-gradient-to-b from-black via-blue-800 to-blue-500'>
       <Navbar/>
       <main className='overflow-hidden'>    
       <div className='flex flex-col md:flex-row md:py-14 md:px-44'>

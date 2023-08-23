@@ -11,7 +11,7 @@ export const Home = (props) => {
   const emailAddress = 'pujasinghaapr99@gmail.com';
 
   return (
-     <div className='overflow-hidden min-h-screen bg-gradient-to-b from-blue-950 via-blue-800 to-pink-400'>
+     <div className='min-h-screen bg-gradient-to-b from-blue-950 via-blue-800 to-pink-400'>
       <Navbar/>
      
       <main className='overflow-hidden'>
