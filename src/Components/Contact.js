@@ -57,7 +57,7 @@ export const Contact = () => {
           <p className='text-white my-3 md:w-1/2 w-full md:ml-96 md:px-44'>Thank you for visiting my portfolio website. I'm excited to share my journey, skills, and projects with you. Please explore my work and feel free to connect with me!</p>
         </div>
       </main>
-      <form ref={form} onSubmit={sendEmail} className='mt-6 md:ml-96 ml-10 mb-6 md:px-44'>
+      <form ref={form} onSubmit={sendEmail} className='mt-6 md:ml-96 ml-11 mb-6 md:px-44'>
         <div className='mb-4'>
           <label className='text-white block'>Name</label>
           <input type='text' name='user_name' className='bg-white text-black rounded-md py-2 px-3 md:w-1/2 w-72' required />
