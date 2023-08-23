@@ -51,7 +51,7 @@ export const Contact = () => {
   return (
     <div className='overflow-hidden min-h-screen bg-gradient-to-b from-sky-600 via-cyan-400 to-orange-300 ...'>
       <Navbar />
-       <main>
+       <main className='overflow-hidden'>
         <div className='text-center'>
           <h1 className='text-white md:text-6xl text-4xl font-bold md:ml-0 ' style={{ textShadow: '0 0 10px darkblue' }}>Contact Me</h1>
           <p className='text-white my-3 md:w-1/2 w-full md:ml-96 md:px-44'>Thank you for visiting my portfolio website. I'm excited to share my journey, skills, and projects with you. Please explore my work and feel free to connect with me!</p>

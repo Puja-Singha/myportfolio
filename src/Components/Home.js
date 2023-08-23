@@ -14,7 +14,7 @@ export const Home = (props) => {
      <div className='overflow-hidden min-h-screen bg-gradient-to-b from-blue-950 via-blue-800 to-pink-400'>
       <Navbar/>
      
-      <main>
+      <main className='overflow-hidden'>
       <div className='flex flex-col md:flex-row md:py-32 md:px-60 mx-6 mt-4'>
           <div className='md:w-full'>
             <h1 className='text-white md:text-6xl text-3xl font-bold' style={{ textShadow: '0 0 15px yellow' }}>Hello Everyone!</h1>
@@ -36,7 +36,7 @@ export const Home = (props) => {
             </div>
            
           </div>
-          <div className='md:w-1/2 md:flex md:ml-44 mt-8 mb-10'>
+          <div className='md:w-1/2 md:flex md:ml-44 mt-12 mb-10 ml-11'>
             <img src={Image1} alt='Image1' className='md:w-96 md:h-96 w-60 h-56 md:rounded-full rounded-full border' style={{boxShadow:'0 0 20px white'}} loading="lazy"/>
           </div>
           

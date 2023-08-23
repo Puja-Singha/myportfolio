@@ -6,7 +6,7 @@ export const About = (props) => {
   return (
     <div className='overflow-hidden min-h-screen bg-gradient-to-b from-black via-blue-800 to-blue-500'>
       <Navbar/>
-      <main>    
+      <main className='overflow-hidden'>    
       <div className='flex flex-col md:flex-row md:py-14 md:px-44'>
           <div className='md:w-1/2'>
             <h1 className='text-red-400 text-4xl font-bold ml-4' >About <span className='text-yellow-400' >Me</span></h1>
@@ -29,7 +29,7 @@ export const About = (props) => {
             <img src={Image3} alt='Image3' className='hidden md:block w-1/2 h-1/2 md:w-full md:h-full md:border-2 md:border-black md:rounded-xl ml-20 rounded-lg md:ml-2' style={{ boxShadow: "0 0 20px white" }} loading="lazy"/>
             <div className='md:mt-8 mt-2'>
               <p className='text-white mx-2'><strong>Professional Experience</strong><br></br><strong className='text-yellow-500'>Sales Internship</strong><br></br>Seeking a broader perspective, I undertook two sales internships. These experiences enabled me to develop interpersonal skills and a business-oriented mindset.</p><br></br>
-              <p className='text-white mx-2'><strong>Continuous Learning</strong><br></br>
+              <p className='text-white mx-2 mb-8'><strong>Continuous Learning</strong><br></br>
               <strong className='text-yellow-500'>Responsive Web Design</strong><br></br>My journey began with a free course on Responsive Web Design from FreeCodeCamp. This immersive learning experience laid the groundwork for my growth in the world of web development.</p>
             </div>
           </div>

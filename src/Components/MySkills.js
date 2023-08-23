@@ -59,7 +59,7 @@ export const MySkills = () => {
   return (
     <div className='overflow-hidden min-h-screen bg-gradient-to-b from-black via-purple-950 to-purple-700'>
       <Navbar/>
-      <main>
+      <main className='overflow-hidden'>
         <div className='flex flex-col md:flex-row '>
         <div className='md:w-full text-center'>
             <h1 className='text-white md:text-4xl text-2xl font-bold' style={{textShadow: '0 0 20px purple' }}>My Skills</h1>
